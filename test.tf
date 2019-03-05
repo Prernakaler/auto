@@ -1,4 +1,4 @@
-variable "aws_access_key" {}
+/*variable "aws_access_key" {}
 variable "aws_secret_key" {}
 #variable "aws_key_path" {}
 #variable "key_name" {}
@@ -37,7 +37,16 @@ variable "ami"{
 }
 
 variable "key_name"{
-}
+*/
+                
+        variable "ami"{
+                }
+        variable "architecture"{
+                }
+        variable "subnetid"{
+                }
+        variable "InstanceType"{}
+        variable "key_name"{}
 resource "aws_instance" "ec21" {
         ami = "${lookup(var.ami, var.architecture)}"
         instance_type ="${var.InstanceType}"
