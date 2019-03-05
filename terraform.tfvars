@@ -1,5 +1,5 @@
-aws_access_key = "AKIAIJCN5ZZSMCS5SKEA"
-aws_secret_key = "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"
+aws_access_key = ""
+aws_secret_key = ""
 
 
 ami = {
