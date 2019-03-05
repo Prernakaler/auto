@@ -18,20 +18,3 @@ output "Name_of_ec2" {
   value = "${aws_instance.ec21.tags.Name}"
 }
 
-variable "aws_access_key" {}
-variable "aws_secret_key" {}
-variable "aws_region" {
-    description = "EC2 Region for the EC2"
-    default = "us-east-1"
-}
-
-
-variable "ami"{
-type = "map"
-}
-
-variable "architecture" {
-description = " allowed values: x86-64"
-default = "x86-64"
-}
-
